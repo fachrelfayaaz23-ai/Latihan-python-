@@ -1,77 +1,104 @@
-# Latihan-python-
-#Aplikasi Cek Ongkos Kirim Sederhana 🚚
+# Sistem Pengelola Nilai Siswa — Python Function Practice
 
-Program ini adalah studi kasus sederhana untuk latihan function di Python.
-Tujuannya adalah menghitung ongkos kirim berdasarkan jarak dan jenis layanan.
+Program ini dibuat untuk latihan penggunaan function pada Python melalui studi kasus nyata: mengelola nilai siswa dalam sebuah kelas. Program ini menggunakan dictionary sebagai tempat penyimpanan data, serta beberapa function untuk menambah, mengubah, mengevaluasi, dan menampilkan data.
 
-Program ini cocok untuk pemula yang ingin memahami bagaimana function bekerja, bagaimana menerima parameter, memproses data, dan mengembalikan nilai.
+---
 
-⸻
+## ✨ Fitur Utama
 
-📌 Fitur Program
+- Menambah siswa beserta nilainya
+- Mengubah nilai siswa
+- Menghitung rata-rata nilai
+- Menampilkan siswa dengan nilai tertinggi dan terendah
+- Menampilkan semua data secara terurut (highest to lowest)
 
-Program dapat menghitung ongkir berdasarkan dua jenis layanan:
+---
 
-1. Reguler
-Biaya: Rp 2.000 per km
+## 🧩 Struktur Function
 
-2. Kilat
-Biaya: Rp 3.500 per km
+### 1. `tambah_siswa(nama, nilai)`
+Menambahkan siswa baru ke dalam database.
+- Jika nama sudah ada → menolak
+- Validasi nilai 0–100
 
-⸻
+### 2. `ubah_nilai(nama, nilai_baru)`
+Mengubah nilai siswa yang sudah terdaftar.
+- Jika siswa tidak ditemukan → error
 
-🧠 Cara Kerja
+### 3. `rata_rata()`
+Menghitung dan mengembalikan rata-rata nilai seluruh siswa.
+- Jika data kosong → pesan khusus
 
-Kamu hanya perlu memanggil function berikut:
+### 4. `nilai_tertinggi()`
+Mengembalikan tuple (nama, nilai) siswa dengan nilai tertinggi.
 
-def hitung_ongkir(jarak, layanan):
-    if layanan == "reguler":
-        return jarak * 2000
-    elif layanan == "kilat":
-        return jarak * 3500
-    else:
-        return "Layanan tidak valid"
+### 5. `nilai_terendah()`
+Mengembalikan tuple (nama, nilai) siswa dengan nilai terendah.
 
-Function menerima:
-• jarak (int/float) → jarak tempuh dalam kilometer
-• layanan (str) → “reguler” atau “kilat”
+### 6. `tampilkan_semua()`
+Menampilkan seluruh data siswa dalam format rapi, diurutkan dari nilai tertinggi.
 
-Kemudian mengembalikan total ongkir sesuai jenis layanan.
+---
 
-⸻
+## 📁 Contoh Struktur Data
 
-📍 Contoh Penggunaan
+```python
+nilai_siswa = {
+    "Andi": 87,
+    "Budi": 75,
+    "Citra": 95
+}
+```
 
-jarak = 10
-layanan = "kilat"
+---
 
-total = hitung_ongkir(jarak, layanan)
-print("Total ongkir:", total)
+## 📌 Contoh Penggunaan
 
-Output:
+```python
+tambah_siswa("Andi", 90)
+tambah_siswa("Budi", 75)
+tambah_siswa("Citra", 95)
 
-Total ongkir: 35000
+print("Rata-rata nilai:", rata_rata())
+print("Nilai tertinggi:", nilai_tertinggi())
+print("Nilai terendah:", nilai_terendah())
 
+tampilkan_semua()
+```
 
-⸻
+---
 
-📂 Tujuan Pembelajaran
+## 🧪 Contoh Output
 
-Studi kasus ini membantu kamu memahami:
+```
+Citra — 95
+Andi — 90
+Budi — 75
+```
 
-• Cara membuat function di Python
-• Cara kerja input parameter
-• Penggunaan percabangan (if/elif/else)
-• Cara mengembalikan nilai (return)
-• Cara menggunakan function di program utama
+---
 
-⸻
+## 🎯 Tujuan Pembelajaran
 
-📬 Catatan
+Project ini dibuat untuk melatih:
+- Pembuatan function Python
+- Penggunaan parameter & return value
+- Pengelolaan data dengan dictionary
+- Percabangan (if/elif/else)
+- Formatting output
+- Penyelesaian kasus nyata dalam coding
 
-Program ini bisa dikembangkan menjadi lebih lengkap, misalnya dengan menambah:
+---
 
-• Estimasi waktu pengiriman
-• Validasi input
-• Tarif layanan tambahan
-• Menu interaktif
+## 🔧 Pengembangan Lanjutan
+
+Fitur tambahan yang bisa ditambahkan:
+- Hapus siswa
+- Ekspor data ke file
+- Input interaktif (CLI)
+- Validasi input lebih ketat
+- Versi OOP menggunakan class
+
+---
+
+**“Setiap baris kode adalah jejak kecil menuju versi dirimu yang lebih kuat dan lebih pintar.”**
