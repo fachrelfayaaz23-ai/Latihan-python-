@@ -1,6 +1,3 @@
-Siap bro, ini README yang rapi, kek buat GitHub, bahasa santai tapi tetap profesional. Tinggal lu copy saja ke repo lu.
-
----
 
 # **📘 Sistem Pengelolaan Nilai Siswa (Python Project)**
 
@@ -134,11 +131,3 @@ Program ini masih sederhana dan ditujukan sebagai latihan dasar. Ke depannya bis
 * Integrasi **GUI (Tkinter/PyQt)**
 
 ---
-
-Kalau lu mau, gua bisa buatin:
-
-* versi OOP
-* versi yang ada menu (CLI interaktif)
-* atau gua rapihin kodingan lu buat dimasukin ke GitHub
-
-Tinggal bilang bro.
