@@ -1,10 +1,5 @@
 # Latihan-python-
-Buat latihan
-Berikut README yang rapi, jelas, dan cocok buat GitHub. Bahasa santai tapi tetap profesional.
-
-⸻
-
-Aplikasi Cek Ongkos Kirim Sederhana 🚚
+#Aplikasi Cek Ongkos Kirim Sederhana 🚚
 
 Program ini adalah studi kasus sederhana untuk latihan function di Python.
 Tujuannya adalah menghitung ongkos kirim berdasarkan jarak dan jenis layanan.
@@ -80,9 +75,3 @@ Program ini bisa dikembangkan menjadi lebih lengkap, misalnya dengan menambah:
 • Validasi input
 • Tarif layanan tambahan
 • Menu interaktif
-
-Kalau mau, aku bisa bantu buat versi lanjutannya.
-
-⸻
-
-“Kode yang bagus bukan yang rumit, tapi yang membuat pembacanya merasa pintar.”
